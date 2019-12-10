@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-br">
+<head>
+      <!-- Google Tag Manager --> 
+  <script>
+      (function (w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({
+              'gtm.start':
+                  new Date().getTime(), event: 'gtm.js'
+          }); var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                  'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5FGSQH7');</script>
+    <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,900|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+  <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/custom.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/dark.css')}}" rel="stylesheet">
+  
+  <link href="{{url_for('static',filename='css/animate.css')}}" rel="stylesheet">
+  
+  <link href="{{url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='style.css')}}" rel="stylesheet">
+
+  
+  <link rel="icon" href="{{url_for('static',filename='images/icons/favicon.png')}}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{url_for('static',filename='images/icons/favicon.png')}}" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+{% block content %}
+</head>
+
+<body class="stretched">
+
+{% endblock %}
+    <script type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/plugins.js')}}"></script>    
+    <script type="text/javascript" src="{{url_for('static',filename='js/functions.js')}}"></script>
+</body>
+</html>

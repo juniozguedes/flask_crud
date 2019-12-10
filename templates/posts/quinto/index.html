@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+    
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5FGSQH7');</script>
+    
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> - Quinto</title>
+    <link rel="icon" href="http://teste.tag.vc/" />
+    <meta name="description" content="" />
+
+    
+    <meta name="google-site-verification" content="RFbMxCgSA40A4I3STD6qIRnjYbfpRuarfUvLVkK1qOo" />
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700,900|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://teste.tag.vc/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="http://teste.tag.vc/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="http://teste.tag.vc/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://teste.tag.vc/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="http://teste.tag.vc/css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="http://teste.tag.vc/css/responsive.css" type="text/css" />
+
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+</head>
+<body class="stretched">
+    
+    <div id="wrapper" class="clearfix">
+<div id="top-bar">
+    <div class="container-fullwidth clearfix">
+        <div class="col_half fright col_last nobottommargin">
+            
+            <div class="top-links">
+                <ul>
+                    
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li>
+                        <a href="#" id="top-cart-trigger">Entrar</a>
+                        <div id="top-cart">
+                            <div class="top-cart-content">
+                                <form method="post" action="https://v2.afilio.com.br/index.php" id="login-form" name="loginForm">
+                                    <input type="text" name="auth_login" placeholder="Usu&aacute;rio" required>
+                                    <input type="password" id="auth_pass" name="auth_pass" placeholder="Senha" required>
+                                    <select name="auth_type" required>
+                                        <option value='' disabled selected>Tipo</option>
+                                        <option value="aff">Afiliado</option>
+                                        <option value="mer">Anunciante</option>
+                                    </select>
+                                    <input name='rememberme' type="checkbox" id="remember-me" checked><label for='rememberme'>Lembrar senha</label>
+                                    <div>
+                                        <input type="submit" onclick="submitLogin()" value="Enviar" class="btn btn-danger btn-block">
+                                        <input type="hidden" value="ok" name="Ok">
+                                        <input type="hidden" value="afilio" name="from">
+                                        <input type="hidden" value="http://afilio.com.br/login-incorreto" name="url_error">
+                                        <input type="hidden" value="3" name="id_regie">
+                                    </div>
+                                </form>
+                                <a href="https://v2.afilio.com.br/password.php" target='_blank'>Esqueceu a senha&#63;</a>
+                                <a href="cadastro-afiliado.html">Novo cadastro</a>
+                            </div>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<header id="header" class="header transparent-header page-section dark sticky-header pageFixed">
+    <div id="header-wrap">
+        <div class="container-fullwidth clearfix">
+            <div id="primary-menu-trigger"><i class="fa fas fa-bars"></i></div>
+            
+            <div id="logo">
+                <a href="../index.html" class="standard-logo" data-dark-logo="http://teste.tag.vc/images/logo-afilio.png"><img src="http://teste.tag.vc/images/logo-afilio.png" alt="Logo Afilio"></a>
+                <a href="../index.html" class="retina-logo" data-dark-logo="http://teste.tag.vc/images/logo-afilio.png"><img src="http://teste.tag.vc/images/logo-afilio.png" alt="Logo Afilio"></a>
+            </div>
+
+            <div class="search" id="search">
+                <input type="text" placeholder="Pesquisar..." v-model="txt" @keyup="search()" @blur="close()" maxlength="50">
+                <div class="search-results" :style="{'display': showresult?'block':'none'}">
+                    <a v-for="item in result" :href="item.url">{{ item.title }}</a>
+                </div>
+            </div>
+
+            
+            
+<nav id="primary-menu">
+    <ul>
+        <li><a href="../index.html">In&iacute;cio</a></li>
+        <li><a href="../afiliados.html">Afiliados</a></li>
+        <li><a href="../anunciantes-agencias.html">Anunciantes e Ag&ecirc;ncias</a></li>
+        <li><a href="../poder-da-afiliacao.html">O poder da afilia&ccedil;&atilde;o</a></li>
+        <li>
+            <a href='#' data-select='about-menu'>Sobre Afilio</a>
+            <ul>
+                <li><a href="../sobre-afilio.html#nossahistoria">Nossa hist&oacute;ria</a></li>
+                <li><a href="../sobre-afilio.html#lideres">Nossos l&iacute;deres</a></li>
+                <li><a href="../sobre-afilio.html#cj">CJ | Commission Junction</a></li>
+                <li><a href="../sobre-afilio.html#instituto">Instituto Afilio</a></li>
+                <li><a href="../carreiras.html">Carreiras</a></li>
+                <li><a href="../cases.html">Cases</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html" class='marcador'>Not&iacute;cias</a></li>
+    </ul>
+</nav>
+
+        </div>
+    </div>
+</header>
+
+
+
+<section class="content mainSection postContent">
+    <div class="contentWrapper">
+        <article>
+            <picture class='heroImg'>
+                <img src='http://teste.tag.vc/images/rio-de-janeiro.jpg' alt='Quinto' />
+            </picture>
+
+            <h1>Quinto</h1>
+
+            <h3 class='postDescription'>Esta é a descrição da página configurada pelo front matter!</h3>
+
+            <p class='postInfo'>
+                <i class="fas fa-calendar-alt"></i>
+                Sunday, May, 2019 por John Doe.
+            </p>
+
+            <section class="postTags">
+                
+
+    <a href="http://teste.tag.vc/tags/music/" class="postTag" alt="music.">
+        #music
+    </a>
+
+
+    <a href="http://teste.tag.vc/tags/free/" class="postTag" alt="free.">
+        #free
+    </a>
+
+
+            </section>
+
+            <h3>This is a Standard post with a Preview Image</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum felis odio, venenatis non vestibulum id, ullamcorper a metus. Nulla sodales lorem ut augue volutpat lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt semper nisl facilisis sagittis. Pellentesque rutrum purus at felis interdum elementum. Donec ullamcorper sem ut orci fermentum tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin gravida dui a pulvinar congue. Donec efficitur et erat eget volutpat. Proin tempus felis nec pharetra pellentesque. Aenean purus ante, rhoncus sed pellentesque in, volutpat ut purus. Phasellus a lectus ipsum.</p>
+<p>Ut sapien arcu, sodales non eleifend id, gravida vel urna. Ut dignissim, erat sed pretium consequat, metus nunc consectetur odio, eget efficitur lectus mauris et metus. Quisque mattis diam eu ex placerat auctor. Donec eget est non metus pulvinar ultricies. Maecenas auctor orci in convallis feugiat. Ut condimentum metus ut nisl molestie, et finibus nunc posuere. Ut a porttitor lorem. Aliquam feugiat commodo suscipit. Maecenas volutpat dignissim augue ac aliquet. Duis sodales sem velit, viverra accumsan sem aliquam eget. Cras imperdiet sollicitudin dui, ac dignissim augue vulputate ac. In hac habitasse platea dictumst. Mauris ultrices aliquam est, eu convallis odio imperdiet vel.</p>
+<p>Maecenas et orci eu diam pharetra placerat eu vitae ligula. Suspendisse eu tincidunt nunc, consectetur dictum neque. Vestibulum turpis neque, efficitur eu semper id, accumsan quis nisi. Morbi at enim et massa ullamcorper cursus. Curabitur odio eros, pellentesque id mauris eu, rhoncus congue lacus. Aliquam sodales, ante nec consectetur rhoncus, justo enim imperdiet arcu, vel vulputate orci risus in nunc. Morbi ultricies porttitor blandit. Donec et libero et est aliquet eleifend elementum at nisl.</p>
+<p>Morbi et varius enim. Curabitur ex nunc, ultricies in fermentum quis, hendrerit eu urna. Sed suscipit nulla eu elit rhoncus vestibulum. Etiam posuere, ligula vitae dapibus interdum, dolor massa scelerisque eros, quis placerat urna augue sit amet erat. Donec sodales tempor ante, eget porta sapien finibus at. Quisque sed mauris vitae urna fermentum convallis. Suspendisse sed ipsum lectus. Cras et ornare eros.</p>
+<p>Nullam vel purus leo. Curabitur ullamcorper tristique tellus, hendrerit tincidunt arcu sodales nec. Donec venenatis efficitur lectus eu ultricies. Curabitur posuere ac odio non convallis. Integer feugiat vitae metus non pellentesque. Proin vel nisi malesuada nulla bibendum tempus. Quisque pulvinar commodo libero vitae pulvinar. Aliquam tempor sem non augue venenatis bibendum. Donec et turpis orci. Aliquam nec justo ac ex blandit sodales. Aliquam dictum quam pharetra turpis posuere, eget tristique enim mollis. Quisque nec dolor et mauris ultrices accumsan nec ac nisi.</p>
+<p>Maecenas tristique tonto tortor arcu, id efficitur odio semper nec. Vivamus ultricies sapien in commodo venenatis. Etiam in scelerisque nulla, in rutrum tortor. Phasellus sit amet tincidunt nunc. Praesent mi mauris, volutpat in egestas nec, dapibus nec ante. Phasellus elementum pellentesque eros. Donec a consectetur purus. Aenean vel consectetur dolor. Nam ante orci, ullamcorper eu mauris laoreet, tempor tempus enim.</p>
+<p>Pellentesque est ex, elementum non nisi quis, blandit finibus nunc. Morbi pulvinar magna sed ultricies varius. Morbi eu justo porttitor, scelerisque nisl sit amet, scelerisque felis. Nunc id tellus lectus. Sed non pulvinar enim. Praesent suscipit lorem vel eros varius, sed eleifend nulla aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a luctus diam, eget feugiat lectus. Sed hendrerit, odio quis luctus vehicula, metus odio lobortis metus, ac volutpat velit dolor a nisl. Praesent feugiat urna eu ornare luctus.</p>
+<p>Morbi nec convallis metus. Integer dignissim pellentesque tellus, et faucibus metus imperdiet ac. Etiam scelerisque mi vitae enim pharetra gravida. In venenatis nulla quis lorem blandit, vitae viverra tortor mollis. Aenean felis dui, porttitor quis feugiat et, dignissim eget metus. Aliquam convallis nec ante a elementum. Vestibulum vulputate condimentum orci at aliquam. Proin commodo imperdiet purus, non rutrum mauris viverra vitae. Cras sem turpis, commodo vel diam et, dignissim varius sem. Sed ligula arcu, blandit quis metus vitae, laoreet iaculis quam. Phasellus suscipit est libero, sit amet tincidunt nisl placerat ut. Maecenas a sollicitudin sapien. Quisque at turpis nec lorem faucibus mattis. Sed feugiat, sem pulvinar porta sagittis, erat ligula varius est, eu posuere orci lectus ut lacus. Integer in maximus nisl. Nunc mollis hendrerit odio at congue.</p>
+        </article>
+
+        <aside class='relatedPosts' id='relatedPosts'>
+            
+            
+            <h3>Posts relacionados</h3>
+            <ul class='relatedPostsList'>
+            	
+            	<li class='relatedPostsListItem'>
+                    <h4>Quarto</h4>
+                    <p>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="/posts/quarto/">Leia mais</a>
+                </li>
+            	
+            	<li class='relatedPostsListItem'>
+                    <h4>Terceiro</h4>
+                    <p>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="/posts/terceiro/">Leia mais</a>
+                </li>
+            	
+            </ul>
+            
+        </aside>
+
+        <div class="postNavigation">
+            
+            <a href="http://teste.tag.vc/posts/sexto/" class='postNavigationLink'>&lt; Pr&oacute;ximo</a>
+            
+            <a href="http://teste.tag.vc/" class='postNavigationLink'>Voltar</a>
+            
+            <a href="http://teste.tag.vc/posts/quarto/" class='postNavigationLink'>Anterior &gt;</a>
+            
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="footer dark">
+    <div class="offices">
+        <div class="office">
+            <img src="http://teste.tag.vc/images/rio-de-janeiro.jpg" alt="Rio de Janeiro">
+            <div class='address'>
+                <p>Rio de Janeiro</p>
+                <a href="tel:+55-21-2244-8888">+55 21 2244 8888</a>
+                <a href="https://goo.gl/maps/XYN4kcgvSJL2" target="_blank" rel="nofollow">R. Helios Seelinger, n&ordm; 155, 4&ordm; Andar - Barra da Tijuca<br>RJ - CEP: 22640-040</a>
+            </div>
+        </div>
+        <div class="office">
+            <img src="http://teste.tag.vc/images/sao-paulo.jpg" alt="S&atilde;o Paulo">
+            <div class='address'>
+                <p>S&atilde;o Paulo</p>
+                <a href="tel:+55-11-3294-7958">+55 11 3294 7958</a>
+                <a href="https://goo.gl/maps/DEuSmbScmQ72" target="_blank" rel="nofollow">R. Uba&iacute;ra, n&ordm; 75 - Indian&oacute;polis<br>SP - CEP: 04517-140</a>
+            </div>
+        </div>
+    </div>
+    <div id="copyrights">
+        <div class="container clearfix">
+            <div class="col-md-9">
+                <div class="copyrights-menu copyright-links clearfix">
+                    <a href="../index.html">In&iacute;cio</a>
+                    <a href="../afiliados.html">Afiliados</a>
+                    <a href="../anunciantes-agencias.html">Anunciantes e Ag&ecirc;ncias</a>
+                    <a href="../poder-da-afiliacao.html">O poder da afilia&ccedil;&atilde;o</a>
+                    <a href="../sobre-afilio.html">Sobre Afilio</a>
+                    <a href="../carreiras.html">Carreiras</a>
+                    <a href="../contato.html">Contato</a>
+                    <a href="../faq.html">FAQ</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="fright clearfix">
+                    <a href="https://www.facebook.com/Afilio.fcb" target="_blank" class="social-icon si-small si-borderless si-facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/afiliobrasil/" target="_blank" class="social-icon si-small si-borderless si-instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/afilio" target="_blank" class="social-icon si-small si-borderless si-linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="center">Copyright &copy; 2019 Afilio S/A.</div>
+        </div>
+        
+    </div>
+</footer>
+</div>
+    <div id="gotoTop"><i class="fas fa-angle-up"></i></div>
+
+    
+    <script type="text/javascript" src="http://teste.tag.vc/js/jquery.js"></script>
+    <script type="text/javascript" src="http://teste.tag.vc/js/plugins.js"></script>
+    
+    <script type="text/javascript" src="http://teste.tag.vc/js/functions.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+
+    <script>
+    let vuesearch = new Vue({
+        el: '#search', 
+        data: {
+            txt: '', 
+            timeoutID: 0, 
+            showresult: false, 
+            result: {}, 
+            bdd: [] 
+            },
+        mounted: function() {
+            
+            axios.get('http:\/\/teste.tag.vc\/search\/index.json')
+            .then(function (response) {
+                vuesearch.bdd = response.data.results;
+                })
+            .catch(function (error) {
+                console.log(error);
+                });
+            },
+        methods: {
+            close: function() {
+                
+                
+                setTimeout(function() {
+                    vuesearch.showresult = false;
+                    vuesearch.txt = '';
+                    }, 300);
+                },
+            search: function() {
+                
+                clearTimeout(this.timeoutID);
+                this.timeoutID = setTimeout(this.dosearch, 500);
+                },
+            dosearch: function() {
+                
+                this.result = []; 
+                let words = this.txt.split(' '); 
+                let words2 = []; 
+                words.forEach(function(element) { 
+                    if(element) {words2.push(element);}
+                    });
+                let r;
+                let resultmp;
+                words2.forEach(function(e) { 
+                    r = vuesearch.bdd.filter(p => p.content.indexOf(e.toLowerCase()) !== -1);
+                    if(vuesearch.result.length===0) {vuesearch.result = r.slice(); return;}
+                    resultmp = [];
+                    vuesearch.result.forEach(function(all1) {
+                        r.forEach(function(all2) { 
+                            if(all1.url===all2.url) {resultmp.push(all1);}
+                            });
+                        });
+                    vuesearch.result = resultmp.slice();
+                    });
+                this.result = this.result.slice(0, 10); 
+                this.showresult = (this.result.length>0); 
+                } 
+            } 
+        }); 
+    </script>
+</body>
+</html>

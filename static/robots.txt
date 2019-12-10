@@ -1,0 +1,6 @@
+User-agent: *
+
+Disallow: /404.html
+Noindex: /404.html
+
+Sitemap: https://afil.io/sitemap.xml

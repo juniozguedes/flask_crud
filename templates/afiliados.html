@@ -1,0 +1,182 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+
+     <meta name="description" content="Seja um Afiliado&#33; E tenha &agrave; disposi&ccedil;&atilde;o uma plataforma exclusiva, relat&oacute;rios detalhados, monitoramento de seus resultados em tempo real de seus lucros." />
+    <title>Como se Tornar um afiliado | Afilio</title>
+</head>
+
+<body class="stretched">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FGSQH7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Document Wrapper -->
+	<div id="wrapper" class="clearfix">
+			{% if afiliados %}
+				<script type="text/javascript">
+					var d = document.getElementsByClassName("h_afiliados");
+					d.className += "marcador";
+				</script>
+			{% endif %}
+
+		<!-- Header & Top Bar -->
+		{% include 'header.html' %}
+
+
+		<section id="slider" class="slider-parallax full-screen dark error404-wrap afiliadosSlider">
+			<div class="slider-parallax-inner">
+				<div class="container vertical-middle center clearfix">
+					<div class="col-md-6">
+						<div class="fslider testimonial-full" data-animation="fade" data-arrows="false">
+							<div class="flexslider">
+								<div class="slider-wrap">
+									<div class="slide slide-leftColumn" data-thumb-alt="">
+										<div class="anima-right-animate-opacity">
+											<p class="transic-texto-home sliderTitle">Encontre as maiores marcas em nossa rede&#33;</p>
+											<span>Tenha acesso &agrave; campanhas das marcas mais reconhecidas da Am&eacute;rica Latina.</span>
+										</div>
+									</div>
+									<div class="slide slide-leftColumn" data-thumb-alt="">
+										<div class="anima-right-animate-opacity">
+											<h1 class="transic-texto-home sliderTitle">Monetize com facilidade&#33;</h1>
+											<span>50 mil sites cadastrados na rede Afilio.</span>
+										</div>
+									</div>
+									<div class="slide slide-leftColumn" data-thumb-alt="">
+										<div class="anima-right-animate-opacity">
+											<p class="transic-texto-home sliderTitle">Oportunidade de escalar suas vendas.</p>
+											<span>Ter o pr&oacute;prio neg&oacute;cio para administrar e, junto com a Afilio, monetizar com mais facilidade.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="video-wrap">
+					<video poster="{{url_for('static',filename='images/afiliados-afilio.jpg')}}" preload="auto" loop autoplay muted>
+						<source src="{{url_for('static',filename='images/videos/home-2.mp4')}}" type='video/mp4' />
+					</video>
+					<div class="video-overlay"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- seção afiliados -->
+		<section class="content mainSection afiliadosPage">
+			<div class="sectionImg">
+				<img src="{{url_for('static',filename='images/afilie-se.jpg')}}" alt='Seja um afiliado'>
+			</div>
+			<div class='contentWrapper'>
+				<h2>Afiliados</h2>
+				<h3>Torne-se um afiliado&#33;</h3>
+				<p>Cadastre-se gratuitamente em nossa rede e ganhe comiss&otilde;es atrav&eacute;s da divulga&ccedil;&atilde;o de produtos e servi&ccedil;os dos nossos anunciantes. O Afiliado pode trabalhar com diferentes tipos de conte&uacute;dos digitais na Afilio.<br />Conhe&ccedil;a alguns formatos:</p>
+				<div class="customSlider">
+					<input type="radio" name="customSliderControl" title="Sites e cupons" checked="checked" class="customSliderControl"/>
+					<input type="radio" name="customSliderControl" title="Email marketing" class="customSliderControl"/>
+					<input type="radio" name="customSliderControl" title="M&iacute;dia" class="customSliderControl"/>
+					<input type="radio" name="customSliderControl" title="Influenciadore" class="customSliderControl"/>
+					<input type="radio" name="customSliderControl" title="Redes sociais" class="customSliderControl"/>
+					<div class="customSliderWrapper">
+						<div class="customSlide">
+							<p>Sites de cupons e descontos.</p>
+						</div>
+						<div class="customSlide">
+							<p>Disparadores de e-mail marketing.</p>
+						</div>
+						<div class="customSlide">
+							<p>Compra de m&iacute;dia.</p>
+						</div>
+						<div class="customSlide">
+							<p>Influenciadores.</p>
+						</div>
+						<div class="customSlide">
+							<p>P&aacute;ginas e grupos em redes sociais.</p>
+						</div>
+					</div>
+				</div>
+				<a href="cadastro-afiliado.html">Cadastre agora</a>
+			</div>
+		</section>
+		<!-- fim seção afiliados -->
+
+		<section class='content mainSection diferenciais'>
+			<div class="sectionImg">
+				<img src="{{url_for('static',filename='images/diferenciais-afilio.jpg')}}" alt="Diferenciais da rede Afilio">
+			</div>
+			<div class="contentWrapper">
+				<h2>Os diferenciais da rede Afilio</h2>
+				<h3>A Afilio tem diferenciais exclusivos, saiba quais&#33;</h3>
+				<p>Tudo para voc&ecirc; monetizar com facilidade e rapidez.</p>
+				<ul class='listaDiferenciais'>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> Plataforma pr&oacute;pria e transparente;</li>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> principais anunciantes do mercado;</li>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> monitoramento em tempo real;</li>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> comiss&otilde;es baseadas em diversos formatos;</li>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> variedade de relat&oacute;rios dispon&iacute;veis;</li>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> sistema de pagamento confi&aacute;vel;</li>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> atendimento de uma equipe dedicada;</li>
+					<li><i class="fas fa-check-circle rightmargin-sm color_rosa"></i> melhor atendimento no Brasil e na Am&eacute;rica Latina.</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class='content ctaSection afiliadoCta'>
+			<div class="contentWrapper">
+				<h2>Pronto para ganhar as melhores comiss&otilde;es&#63;</h2>
+				<a href="cadastro-afiliado.html">Cadastre-se gratuitamente</a>
+			</div>
+		</section>
+		<!-- Fim  CTA -->
+
+		<section class='content mainSection modelosComerciais'>
+			<div class="contentWrapper">
+				<h2>Modelos comerciais</h2>
+				<h3>Todos os modelos comerciais que voc&ecirc; pode trabalhar com a Afilio.</h3>
+				<p>Os afiliados podem escolher.</p>
+				<ul class='listaModelos'>
+					<li>
+						<i class="fas fa-hand-point-up"></i>
+						<h5>Clique duplo</h5>
+						<p>Sua comiss&atilde;o &eacute; contabilizada toda vez que &eacute; gerado um tr&aacute;fego qualificado, um usu&aacute;rio com real interesse no produto.</p>
+					</li>
+					<li>
+						<i class="fab fa-wpforms"></i>
+						<h5>CPL – Custo por lead</h5>
+						<p>&Eacute; o preenchimento de um cadastro utilizado para aumentar os interessados pelo produto ou servi&ccedil;o oferecido por um anunciante.</p>
+					</li>
+					<li>
+						<i class="fas fa-shopping-cart"></i>
+						<h5>CPA – Custo por aquisi&ccedil;&atilde;o ou a&ccedil;&atilde;o</h5>
+						<p>Toda vez que um visitante realiza uma compra, voc&ecirc; &eacute; comissionado. A comiss&atilde;o &eacute; uma porcentagem da venda ou um valor fixo.</p>
+					</li>
+					<li>
+						<i class="fas fa-ad"></i>
+						<h5>CPM – Custo por mil impress&otilde;es</h5>
+						<p>A cada 1000 vezes que o banner aparece na tela dos visitantes do seu site, voc&ecirc; &eacute; comissionado. Visam gera&ccedil;&atilde;o de tr&aacute;fego para o fortalecimento ou lan&ccedil;amento de uma marca.</p>
+					</li>
+					<li>
+						<i class="fas fa-mouse-pointer"></i>
+						<h5>CPC – Custo por clique</h5>
+						<p>A cada clique efetuado em um banner dentro do seu site, voc&ecirc; ser&aacute; comissionado. Muito comum em campanhas de branding e tr&aacute;fego.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class='content ctaSection afiliadoCta'>
+			<div class="contentWrapper">
+				<h2>Pronto para ganhar as melhores comiss&otilde;es&#63;</h2>
+				<a href="cadastro-afiliado.html">Cadastre-se gratuitamente</a>
+			</div>
+		</section>
+		<!-- Fim  CTA -->
+
+{% include 'footer.html' %}
+
+	</div>
+	<!-- wrapper end -->
+
+	<!-- Go To Top -->
+	<div id="gotoTop"><i class="fas fa-angle-up"></i></div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{{ range after 2 .Data.Pages }}
+<div class="spost clearfix">
+  <!-- <div class="entry-image">
+    <a href="#"><img src="images/magazine/small/1.jpg" alt=""></a>
+  </div> -->
+  <div class="entry-c">
+    <div class="entry-title">
+      <h4><a href="{{ .Permalink }}index.html">{{ .Title }}</a></h4>
+    </div>
+    <ul class="entry-meta">
+      <li><i class="fas fa-calendar-alt"></i> 21 jan 2019</li>
+    </ul>
+  </div>
+</div>
+{{ end }}

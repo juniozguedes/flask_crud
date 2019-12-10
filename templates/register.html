@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+	<form action="{{url_for('register')}}" method="POST">
+		<p><input placeholder="login" type="text" name="login"></p>
+		<p><input placeholder="pass" type="password" name="password"></p>
+		<p><input placeholder="nickname" type="nickname" name="nickname"></p>
+		<input class="container" type="submit">
+	</form>
+
+{% endblock %}

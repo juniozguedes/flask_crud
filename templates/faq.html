@@ -1,0 +1,370 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+
+    <title>D&uacute;vidas frequentemente perguntadas | Afilio</title>
+    <meta name="description" content="Perguntas Frequentes - Afilio." />
+</head>
+
+<body class="stretched">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FGSQH7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Document Wrapper -->
+	<div id="wrapper" class="clearfix">
+				<!-- Top Bar -->
+		<div id="top-bar" >
+			<div class="container-fullwidth clearfix">
+				<div class="col_half fright col_last nobottommargin">
+					<!-- Top Links -->
+					<div class="top-links">
+						<ul>
+							<li><a href='#' data-select='lang-menu'>Selecione o idioma</a>
+								<ul id="langMenu">
+									<li><a href="contato.html">Portugu&ecirc;s</a></li>
+									<li><a href="en/contact.html">Ingl&ecirc;s</a></li>
+									<li><a href="es/contacto.html">Espanhol</a></li>
+								</ul>
+							</li>
+							<li><a href="{{url_for('faq')}}">FAQ</a></li>
+							<li><a href="{{url_for('contato')}}">Contato</a></li>
+							<li>
+								<a href="#" id="top-cart-trigger">Entrar</a>
+								<div id="top-cart">
+                                    <div class="top-cart-content">
+                                        <form method="post" action="https://v2.afilio.com.br/index.php" id="login-form" name="loginForm">
+                                            <input type="text" name="auth_login" placeholder="Usu&aacute;rio" required>
+                                            <input type="password" id="auth_pass" name="auth_pass" placeholder="Senha" required>
+                                            <select name="auth_type" required>
+                                                <option value='' disabled selected>Tipo</option>
+                                                <option value="aff">Afiliado</option>
+                                                <option value="mer">Anunciante</option>
+                                            </select>
+                                            <input name='rememberme' type="checkbox" id="remember-me" checked><label for='remember-me'>Lembrar senha</label>
+                                            <div>
+                                                <input type="submit" value="Enviar" class="btn btn-danger btn-block">
+                                                <input type="hidden" value="ok" name="Ok">
+                                                <input type="hidden" value="afilio" name="from">
+                                                <input type="hidden" value="https://www.afilio.com.br/login-incorreto/index.html" name="url_error">
+                                                <input type="hidden" value="3" name="id_regie">
+                                            </div>
+                                        </form>
+                                        <a href="https://v2.afilio.com.br/password.php" target='_blank'>Esqueceu a senha&#63;</a>
+                                        <a href="cadastro-afiliado.html">Novo cadastro</a>
+                                    </div>
+								</div>
+								<!-- top-cart end -->
+							</li>
+						</ul>
+					</div>
+					<!-- top-links end -->
+				</div>
+			</div>
+		</div>
+		<!-- top-bar end -->
+
+		<!-- Header -->
+		<header id="header" class="header transparent-header page-section dark sticky-header pageFixed">
+			<div id="header-wrap">
+				<div class="container-fullwidth clearfix">
+					<div id="primary-menu-trigger"><i class="fa fas fa-bars"></i></div>
+					<!-- Logo -->
+					<div id="logo">
+						<a href="{{url_for('index')}}" class="standard-logo" data-dark-logo="{{url_for('static',filename='images/logo-afilio.png')}}"><img src="{{url_for('static',filename='images/logo-afilio.png')}}" alt="Logo Afilio"></a>
+						<a href="{{url_for('index')}}" class="retina-logo" data-dark-logo="{{url_for('static',filename='images/logo-afilio.png')}}"><img src="{{url_for('static',filename='images/logo-afilio.png')}}" alt="Logo Afilio"></a>
+					</div>
+					<!-- logo end -->
+
+					<!-- Primary Navigation -->
+					<nav id="primary-menu">
+						<ul>
+							<li><a href="{{url_for('index')}}" {% if inicio %} class="marcador" {%endif%}>In&iacute;cio</a></li>
+							<li><a href="{{url_for('afiliados')}}" {% if afiliados %} class="marcador" {%endif%}>Afiliados</a></li>
+							<li><a href="{{url_for('anunciantes_agencias')}}" {% if anunciantes_agencias %} class="marcador" {%endif%} id="h_anunciantes_agencias">Anunciantes e Ag&ecirc;ncias</a></li>
+							<li><a href="{{url_for('poder_afiliacao')}}" {% if poder_afiliacao %} class="marcador" {%endif%} id="h_poder_afiliacao">O poder da afilia&ccedil;&atilde;o</a></li>
+							<li>
+								<a href='#' {% if sobre %} class="marcador" {%endif%} data-select='about-menu'>Sobre Afilio</a>
+								<ul>
+									<li><a href="{{url_for('sobre_afilio_nossa_historia')}}">Nossa hist&oacute;ria</a></li>
+									<li><a href="sobre-afilio.html#lideres">Nossos l&iacute;deres</a></li>
+									<li><a href="sobre-afilio.html#cj">CJ | Commission Junction</a></li>
+									<li><a href="sobre-afilio.html#instituto">Instituto Afilio</a></li>
+									<li><a href="carreiras.html">Carreiras</a></li>
+									<li><a href="cases.html">Cases</a></li>
+								</ul>
+							</li>
+							<li><a href="{{url_for('blog')}}" {% if noticias %} class="marcador" {%endif%} id="h_noticias">Not&iacute;cias</a></li>
+						</ul>
+					</nav>
+					<!-- primary-menu end -->
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- FAQ -->
+		<section class='content mainSection faqPage'>
+			<div class="contentWrapper">
+				<h1>FAQ</h1>
+				<h3>Perguntas Frequentes</h3>
+				<p>Encontre a resposta para algumas d&uacute;vidas.</p>
+				<main>
+					<input id="tab1" type="radio" name="tabs" checked>
+					<label class='faqLabel' for="tab1">Cadastro</label>
+
+					<input id="tab2" type="radio" name="tabs">
+					<label class='faqLabel' for="tab2">Operacional</label>
+
+					<input id="tab3" type="radio" name="tabs">
+					<label class='faqLabel' for="tab3">Pagamentos</label>
+
+					<section id="content1">
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Como alterar os dados cadastrais&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Na se&ccedil;&atilde;o "Meus dados" &eacute; poss&iacute;vel atualizar algumas informa&ccedil;&otilde;es gerais da sua conta, como: endere&ccedil;o f&iacute;sico, telefone e dados banc&aacute;rios. Siga o passo a passo a seguir:
+								<ul class='faqList'>
+									<li>Efetue login em nosso site;</li>
+									<li>na se&ccedil;&atilde;o "Minha Conta", clique em "Minhas informa&ccedil;&otilde;es" para editar.</li>
+								</ul>
+								Para edi&ccedil;&atilde;o de outras informa&ccedil;&otilde;es, entre em contato.
+							</div>
+						</div>
+
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Tenho um site que a lingua principal n&atilde;o &eacute; portugu&ecirc;s, posso me cadastrar&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Sim, desde que o site esteja dentro dos padr&otilde;es de aprova&ccedil;&atilde;o da Afilio.
+							</div>
+						</div>
+
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								J&aacute; utilizo outras redes de afilia&ccedil;&atilde;o. Mesmo assim eu posso me cadastrar na Afilio&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Sim, n&atilde;o exigimos exclusividade, voc&ecirc; pode participar de outros programas e da Afilio.
+							</div>
+						</div>
+
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Como saber se o site foi aprovado ou n&atilde;o&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Voc&ecirc; receber&aacute; um e-mail (o mesmo que voc&ecirc; informou no cadastro de seu site) em at&eacute; 72 horas.
+							</div>
+						</div>
+
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Quais os crit&eacute;rios adotados para aprova&ccedil;&atilde;o de um site&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								&Eacute; preciso que o site contemple alguns quesitos:
+								<ul class='faqList'>
+									<li>Conte&uacute;do em conformidade com a lei (sem incitar o &oacute;dio, drogas, viol&ecirc;ncia, racismos, pedofilia&hellip;);</li>
+									<li>ter um conte&uacute;do verdadeiro e que seja atualizado constantemente;</li>
+									<li>possuir um layout atrativo (n&atilde;o fazer combina&ccedil;&otilde;es de cores fundo e texto que tornem o site ileg&iacute;vel ou com dif&iacute;cil compreens&atilde;o);</li>
+									<li>o site deve estar totalmente conclu&iacute;do/publicado;</li>
+									<li>n&atilde;o pode ser um site espelho que redireciona para outro site.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section id="content2">
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Como escolher as campanhas mais adequadas para o meu canal&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Ap&oacute;s cadastro aprovado, a partir do seu segmento identifique as campanhas correspondendes ao seu p&uacute;blico-alvo.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Posso escolher as campanhas das quais desejo participar&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Sim. Assim que seu cadastro for aprovado acesse no menu todas as campanhas e solicite participa&ccedil;&atilde;o nas campanhas desejadas. N&atilde;o h&aacute; limite de inscri&ccedil;&atilde;o.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Posso sair de qualquer campanha no momento que quiser&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Sim, voc&ecirc; tem total poder de escolha do per&iacute;odo que deseja veicular determinada campanha.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Quem pode se tornar um afiliado&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Qualquer pessoa f&iacute;sica ou pessoa jur&iacute;dica. Basta ter um site dentro de nossas regras de aprova&ccedil;&atilde;o e preencher o cadastro atrav&eacute;s da sess&atilde;o: <a href="cadastro-afiliado.html">cadastro de afiliado</a>.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Quero anunciar, como fa&ccedil;o&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Entre em contato conosco pelos telefones <a href="tel:+55-11-3294-7958">+55 11 3294 7958</a> o <a href="tel:+55-21-2244-8888">+55 21 2244 8888</a>, um comercial ser&aacute; designado para atender sua solicita&ccedil;&atilde;o, avaliar o perfil do seu neg&oacute;cio, e assim que o contrato seja firmado voc&ecirc; j&aacute; poder&aacute; publicar suas campanhas.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Como fa&ccedil;o para me tornar um afiliado&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Acesse a nossa se&ccedil;&atilde;o de <a href="afiliados.html">afiliados</a> e preencha o formul&aacute;rio com seus dados pessoas e a URL de sua p&aacute;gina. &Eacute; importante inserir todos os seus contatos como por exemplo, telefone, e-mail e Skype. Estes ser&atilde;o os meios para que a Afilio se comunique com voc&ecirc; e possamos concluir o seu cadastro.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Como gerar o deeplinks&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								<ul class='faqList'>
+									<li>Atrav&eacute;s da extens&atilde;o;</li>
+									<li>entrando na plataforma na sess&atilde;o “deeplink”;</li>
+									<li>pela API “deeplink”.</li>
+								</ul>
+								Voc&ecirc; pode solicitar o manual de deeplinks para a nossa equipe.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Por que a campanha foi pausada&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								<ul class='faqList'>
+									<li>Or&ccedil;amento do anunciante;</li>
+									<li>sazonalidade da campanha, por exemplo, inscri&ccedil;&atilde;o de faculdade;</li>
+									<li>inadequa&ccedil;ao do canal para a proposta do anunciante.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								O que s&atilde;o campanhas p&uacute;blicas&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								S&atilde;o campanhas abertas para todos os afiliados aprovados que quiserem participar.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								O que s&atilde;o campanhas privadas&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Campanhas onde o afiliado n&atilde;o tem visualiza&ccedil;&atilde;o na plataforma para poder selecionar, porem a afilio pode oferecer a campanha no privado.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								O que s&atilde;o campanhas restritas&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Campanhas fechadas para alguns formatos de veicula&ccedil;&atilde;o espec&iacute;ficos.
+							</div>
+						</div>
+					</section>
+
+					<section id="content3">
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Comprei pelo link Afilio e a venda n&atilde;o captou, o que aconteceu&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								<ul class='faqList'>
+									<li>Pode ter sa&iacute;do do site e entrado por outra m&iacute;dia;</li>
+									<li>pode ter comprado fora do per&iacute;odo de cookie;</li>
+									<li>pode ter gerado o deeplink de maneira errada;</li>
+								</ul>
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Minha venda n&atilde;o foi computada na plataforma, o que pode ter ocorrido&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								<ul class='faqList'>
+									<li>Problema no link com trackeamento errado;</li>
+									<li>cookie em algum momento.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Tenho que pagar alguma coisa para me afiliar&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								N&atilde;o, basta apenas se cadastrar, aguardar a aprova&ccedil;&atilde;o e iniciar a monetiza&ccedil;&atilde;o de seu invent&aacute;rio com as campanhas dispon&iacute;veis na plataforma.
+							</div>
+						</div>
+						<div class="toggle">
+							<div class="togglet">
+								<i class="toggle-closed fas fa-check-circle"></i>
+								<i class="toggle-open fas fa-times-circle"></i>
+								Quais s&atilde;o os tipos de remunera&ccedil;&otilde;es que Afilio trabalha&#63;
+							</div>
+							<div class="togglec" style="display: none;">
+								Acesse a se&ccedil;&atilde;o <a href="anunciantes-agencias.html#modelos_comerciais">modelos comerciais</a> e veja todos os nossos modelos, em caso de d&uacute;vidas voc&ecirc; pode enviar um e-mail para <a href='mailto:contato@afil.io' target='_blank'>contato@afil.io</a>.
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+		</section>
+		<!-- fim FAQ -->
+
+{% include 'footer.html' %}
+	</div>
+	<!-- wrapper end -->
+
+	<!-- Go To Top -->
+	<div id="gotoTop"><i class="fas fa-angle-up"></i></div>
+
+{% endblock %}

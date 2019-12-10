@@ -1,0 +1,10 @@
+<div class='spotlight'>
+    <picture>
+        {{ with .Params.image }}<img src="{{ . | absURL }}" alt="post-image">{{ end }}
+    </picture>
+    <div class="postInfo">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}index.html">Leia mais</a>
+    </div>
+</div>

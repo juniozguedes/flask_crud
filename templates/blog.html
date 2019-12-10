@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% block content %}
+<title>Notícias Afilio</title>
+</head>
+
+<body class="stretched">
+    
+    <div id="wrapper" class="clearfix">
+      
+      <div id="top-bar">
+          <div class="container-fullwidth clearfix">
+              <div class="col_half fright col_last nobottommargin">
+                  
+                  <div class="top-links">
+                      <ul>
+                          
+                          <li><a href="{{url_for('faq')}}">FAQ</a></li>
+                          <li><a href="{{url_for('contato')}}">Contato</a></li>
+                          <li>
+                              <a href="#" id="top-cart-trigger">Entrar</a>
+                              <div id="top-cart">
+                                  <div class="top-cart-content">
+                                      <form method="post" action="https://v2.afilio.com.br/index.php" id="login-form" name="loginForm">
+                                          <input type="text" name="auth_login" placeholder="Usu&aacute;rio" required>
+                                          <input type="password" id="auth_pass" name="auth_pass" placeholder="Senha" required>
+                                          <select name="auth_type" required>
+                                              <option value='' disabled selected>Tipo</option>
+                                              <option value="aff">Afiliado</option>
+                                              <option value="mer">Anunciante</option>
+                                          </select>
+                                          <input name='rememberme' type="checkbox" id="remember-me" checked><label for='rememberme'>Lembrar senha</label>
+                                          <div>
+                                              <input type="submit" onclick="submitLogin()" value="Enviar" class="btn btn-danger btn-block">
+                                              <input type="hidden" value="ok" name="Ok">
+                                              <input type="hidden" value="afilio" name="from">
+                                              <input type="hidden" value="http://afilio.com.br/login-incorreto" name="url_error">
+                                              <input type="hidden" value="3" name="id_regie">
+                                          </div>
+                                      </form>
+                                      <a href="https://v2.afilio.com.br/password.php" target='_blank'>Esqueceu a senha&#63;</a>
+                                      <a href="cadastro-afiliado.html">Novo cadastro</a>
+                                  </div>
+                              </div>
+                              
+                          </li>
+                      </ul>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+      
+
+
+      
+      <header id="header" class="header transparent-header page-section dark sticky-header pageFixed">
+          <div id="header-wrap">
+              <div class="container-fullwidth clearfix">
+                  <div id="primary-menu-trigger"><i class="fa fas fa-bars"></i></div>
+                  
+          <div id="logo">
+            <a href="{{url_for('index')}}" class="standard-logo" data-dark-logo="{{url_for('static',filename='images/logo-afilio.png')}}"><img src="{{url_for('static',filename='images/logo-afilio.png')}}" alt="Logo Afilio"></a>
+            <a href="{{url_for('index')}}" class="retina-logo" data-dark-logo="{{url_for('static',filename='images/logo-afilio.png')}}"><img src="{{url_for('static',filename='images/logo-afilio.png')}}" alt="Logo Afilio"></a>
+          </div>
+                  
+                  
+          <nav id="primary-menu">
+            <ul>
+              <li><a href="{{url_for('index')}}">In&iacute;cio</a></li>
+              <li><a href="{{url_for('afiliados')}}">Afiliados</a></li>
+              <li><a href="{{url_for('anunciantes_agencias')}}">Anunciantes e Ag&ecirc;ncias</a></li>
+              <li><a href="{{url_for('poder_afiliacao')}}">O poder da afilia&ccedil;&atilde;o</a></li>
+              <li>
+                <a href='#' data-select='about-menu'>Sobre Afilio</a>
+                <ul>
+                  <li><a href="{{url_for('sobre_afilio_nossa_historia')}}">Nossa hist&oacute;ria</a></li>
+                  <li><a href="sobre-afilio.html#lideres">Nossos l&iacute;deres</a></li>
+                  <li><a href="sobre-afilio.html#cj">CJ | Commission Junction</a></li>
+                  <li><a href="sobre-afilio.html#instituto">Instituto Afilio</a></li>
+                  <li><a href="carreiras.html">Carreiras</a></li>
+                  <li><a href="cases.html">Cases</a></li>
+                </ul>
+              </li>
+              <li><a class='marcador' href="{{url_for('blog')}}">Not&iacute;cias</a></li>
+            </ul>
+          </nav>
+                  
+              </div>
+          </div>
+      </header>
+      
+
+
+            <section class="content mainSection newsPage">
+              <div class="contentWrapper">
+                <h1>Not&iacute;cias</h1>
+                <h3>Saiba todas as novidades que a Afilio tem para contar&#33;</h3>
+                <section id='news'>
+
+                  {% if page == 1 %}
+                    <div class='spotlight'>
+                      <picture>
+                        <img src="{{url_for('static', filename=recent_post.uniquekey)}}" alt="post-image">
+                      </picture>
+                      <div class="postInfo">
+                        <h2>{{recent_post.title}}</h2>
+                        <p>{{recent_post.short}}</p>
+                        <a href="{{url_for('show', slug=recent_post.slug, filename=recent_post.uniquekey)}}>{{recent_post.title}}">Leia mais</a>
+                      </div>
+                    </div>
+
+                      
+
+                    <aside>
+                      <h3>Mais lido</h3>
+                          
+                      <div class='mostRead'>
+                        <picture>
+                            <img src="{{url_for('static', filename=top_post.uniquekey)}}" alt="post-image">
+                        </picture>
+                        <div class="postInfo">
+                            <h2>{{top_post.title}}</h2>
+                            <p>{{top_post.short}}.</p>
+                            <a href="{{url_for('show', slug=top_post.slug, filename=top_post.uniquekey)}}>{{top_post.title}}">Leia mais</a>
+                        </div>
+                      </div>
+                    </aside>
+                  {% endif %}
+
+                  <div class="postsList">
+                        
+                    {% for post in posts %}
+                      <div class='postListItem'>
+                        <picture>
+                            <img src="{{url_for('static', filename=post.uniquekey)}}" alt="post-image">
+                        </picture>
+                        <div class="postInfo">
+                            <h2>{{post.title}}</h2>
+                            <p>{{post.short}}.</p>
+                            <a href="{{url_for('show', slug=post.slug, filename=post.uniquekey)}}>{{post.title}}">Leia mais</a>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  
+                  </div>
+
+                  <div class="postPagination">
+
+                    {% if prev_url %}
+                      <a href="{{ prev_url }}">Recentes</a>
+                    {% endif %}
+                    {% if next_url %}
+                      <a href="{{ next_url }}">Anteriores</a>
+                    {% endif %}
+                  </div>
+                </section>
+              </div>
+            </section>
+
+<footer id="footer" class="footer dark">
+      <div class="offices">
+        <div class="office">
+          <img src="{{url_for('static',filename='images/rio-de-janeiro.jpg')}}" alt="Afilio no Rio de Janeiro">
+          <div class='address'>
+            <p>Rio de Janeiro</p>
+            <a href="tel:+55-21-2244-8888">&#43;55 21 2244 8888</a>
+            <a href="https://goo.gl/maps/XYN4kcgvSJL2" target="_blank" rel="nofollow">R. Helios Seelinger, nº 155, 4º Andar - Barra da Tijuca<br />RJ - CEP: 22640-040</a>
+          </div>
+        </div>
+        <div class="office">
+          <img src="{{url_for('static',filename='images/sao-paulo.jpg')}}" alt="Afilio em S&atilde;o Paulo">
+          <div class='address'>
+            <p>S&atilde;o Paulo</p>
+            <a href="tel:+55-11-3294-7958">&#43;55 11 3294 7958</a>
+            <a href="https://goo.gl/maps/DEuSmbScmQ72" target="_blank" rel="nofollow">R. Uba&iacute;ra, nº 75 - Indian&oacute;polis<br />SP - CEP: 04517-140</a>
+          </div>
+        </div>
+      </div>
+      <div id="copyrights">
+        <div class="container clearfix">
+          <div class="col-md-9">
+            <div class="copyrights-menu copyright-links clearfix">
+              <a href="index.html">In&iacute;cio</a>
+              <a href="afiliados.html">Afiliados</a>
+              <a href="anunciantes-agencias.html">Anunciantes e Ag&ecirc;ncias</a>
+              <a href="poder-da-afiliacao.html">O poder da afilia&ccedil;&atilde;o</a>
+              <a href="sobre-afilio.html">Sobre Afilio</a>
+              <a href="carreiras.html">Carreiras</a>
+              <a href="contato.html">Contato</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="fright clearfix">
+              <a href="https://www.facebook.com/Afilio.fcb" target="_blank" class="social-icon si-small si-borderless si-facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/afiliobrasil/" target="_blank" class="social-icon si-small si-borderless si-instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/afilio" target="_blank" class="social-icon si-small si-borderless si-linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="center">Copyright &copy; 2019 Afilio S/A.</div>
+        </div>
+        <!-- #copyrights end -->
+      </div>
+    </footer>
+    <!-- #footer end -->
+        
+    </div>
+    
+    
+    <div id="gotoTop"><i class="fas fa-angle-up"></i></div>
+
+    
+{% endblock %}

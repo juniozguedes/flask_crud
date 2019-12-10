@@ -1,0 +1,9 @@
+baseURL = "/"
+languageCode = "pt-br"
+paginate = 8
+publishDir = "noticias"
+relativeURLs = true
+summaryLength = "7"
+title = "Afilio"
+[permalinks]
+posts = "posts/:title/"

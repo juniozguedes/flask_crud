@@ -1,0 +1,128 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+    <title>Como funciona o marketing de afilia&ccedil;&atilde;o | Afilio</title>
+    <meta name="description" content="Veja aqui como funciona o nosso sistema de afilia&ccedil;&atilde;o. Confira&#33;" />
+</head>
+
+<body class="stretched">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FGSQH7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Document Wrapper -->
+	<div id="wrapper" class="clearfix">
+{% include 'header.html' %}
+		<section id="slider" class="slider-parallax full-screen dark error404-wrap poderSlider">
+			<div class="slider-parallax-inner">
+				<div class="container vertical-middle center clearfix">
+					<div class="col-md-6">
+						<div class="fslider testimonial-full" data-animation="fade" data-arrows="false">
+							<div class="flexslider">
+								<div class="slider-wrap">
+									<div class="slide slide-leftColumn" data-thumb-alt="">
+										<div class="anima-right-animate-opacity">
+											<p class="transic-texto-home sliderTitle">Afilia&ccedil;&atilde;o supera outros canais de marketing.</p>
+										</div>
+									</div>
+									<div class="slide slide-leftColumn" data-thumb-alt="">
+										<div class="anima-right-animate-opacity">
+											<h1 class="transic-texto-home sliderTitle">Marketing de afiliados.</h1>
+											<span>Uma estrat&eacute;gia onde todos ganham.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="video-wrap">
+					<video poster="{{url_for('static',filename='images/poder-afiliacao-afilio.jpg')}}" preload="auto" loop autoplay muted>
+						<source src="{{url_for('static',filename='images/videos/poder-afiliacao.mp4')}}" type='video/mp4' />
+					</video>
+					<div class="video-overlay"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- seção "o poder da afilização" -->
+		<section class='content mainSection poderAfiliacaoIntro'>
+			<div class="sectionImg">
+				<img src="{{url_for('static',filename='images/estrategia-afiliacao.jpg')}}" alt="O poder da afiliação">
+			</div>
+			<div class="contentWrapper">
+				<h2>O poder da afilia&ccedil;&atilde;o</h2>
+				<h3>&Uacute;nica estrat&eacute;gia digital voltada para os resultados.</h3>
+				<p>A afilia&ccedil;&atilde;o ou marketing de afiliado, ou Marketing de performance, &eacute; uma forma eficaz de mensura&ccedil;&atilde;o de retorno sobre investimento.</p>
+				<div class="linkWrapper">
+					<a href="quero-anunciar.html">Anuncie com a Afilio</a>
+					<a href="cadastro-afiliado.html">Seja um Afiliado</a>
+				</div>
+			</div>
+		</section>
+		<!-- fim seção "o poder da afilização" -->
+
+		<!-- seção "papel na afiliação" -->
+		<section class='content mainSection secaoPapel'>
+			<div class="contentWrapper">
+				<h2>Qual &eacute; o seu papel na Afilia&ccedil;&atilde;o&#63;</h2>
+				<p>A afilia&ccedil;&atilde;o ou marketing de afiliado, tamb&eacute;m &eacute; conhecida por Marketing de performance, pois &eacute; a &uacute;nica estrat&eacute;gia digital totalmente voltada para os resultados. O Marketing de Performance &eacute; uma forma eficaz de mensura&ccedil;&atilde;o de retorno sobre investimento.</p>
+				<div class='papel'>
+					<img src="{{url_for('static',filename='images/anunciante-poder.png')}}" alt="Anunciante/Ag&ecirc;ncia - O poder da afilia&ccedil;&atilde;o">
+					<div class="heading-block topmargin-sm">
+						<h5>Anunciante ou ag&ecirc;ncia</h5>
+						<p>Atrav&eacute;s da Afilio, os anunciantes ou agencias alavancam seus  produtos e servi&ccedil;os, seja em vendas, leads ou exposi&ccedil;&atilde;o de marca. E comissionam os afiliados que performaram.</p>
+					</div>
+				</div>
+				<div class='papel'>
+					<img src="{{url_for('static',filename='images/afiliado-poder.png')}}" alt="Afiliados - O poder da afilia&ccedil;&atilde;o">
+					<div class="heading-block topmargin-sm">
+						<h5>Afiliado</h5>
+						<p>Podemos chamar o afiliado de empreendedor digital. &Eacute; qualquer pessoa f&iacute;sica ou jur&iacute;dica que por meio de diversos modelos de divulga&ccedil;&atilde;o ou tecnologia inovadora promove produto/servi&ccedil;o/marca disponibilizado pelo anunciante da Afilio. Sempre que o consumidor realizar uma compra, assim que validada pelo anunciante, o afiliado recebe comiss&atilde;o.</p>
+					</div>
+				</div>
+				<div class='papel'>
+					<img src="{{url_for('static',filename='images/afiliado-anunciante-poder.png')}}" alt="Afilio - O poder da afilia&ccedil;&atilde;o">
+					<div class="heading-block topmargin-sm">
+						<h5>Afilio</h5>
+						<p>Com uma plataforma &uacute;nica e exclusiva, re&uacute;ne os melhores afiliados e entrega para os seus clientes (anunciantes e agencias), vendas, leads e exposi&ccedil;&atilde;o de marca/produto/servi&ccedil;o. Alavanca o crescimento do cliente e mensura o investimento com efic&aacute;cia.</p>
+					</div>
+				</div>
+			</div>
+  	    </section>
+		<!-- fim seção "papel na afiliação" -->
+
+		<section class='content mainSection anunciantesAfiliados'>
+			<div class="contentWrapper">
+				<h3>Qual seu papel no cen&aacute;rio&#63;</h3>
+				<div class="roleBox">
+					<div>
+						<h2>Anunciantes</h2>
+						<h3>Aumente a exposi&ccedil;&atilde;o de sua marca&#33;</h3>
+						<p>Gere mais vendas e leads. Recompense os afiliados por promoverem seus produtos/servi&ccedil;os com sucesso. Seja um anunciante da rede Afilio&#33;</p>
+						<p>
+							<a href="quero-anunciar.html">Quero anunciar</a>
+							<a href="anunciantes-agencias.html">Saiba mais</a>
+						</p>
+					</div>
+					<!-- Anunciantes End-->
+
+					<!-- Anunciantes -->
+					<div>
+						<h2>Afiliados</h2>
+						<h3>Seja um afiliado da rede Afilio&#33;</h3>
+						<p>Seja parceiro das melhores marcas do Brasil e Am&eacute;rica Latina. Ganhe comiss&otilde;es em parceria com as maiores marcas do Brasil e Am&eacute;rica Latina, promovendo com sucesso produtos e servi&ccedil;os.</p>
+						<p>
+							<a href="cadastro-afiliado.html">Seja um Afiliado</a>
+							<a href="afiliados.html">Saiba mais</a>
+						</p>
+					</div>
+					<!-- Anunciantes End-->
+				</div>
+			</div>
+		</section>
+
+{% include 'footer.html' %}
+	</div>
+	<!-- wrapper end -->
+
+	<!-- Go To Top -->
+	<div id="gotoTop"><i class="fas fa-angle-up"></i></div>
+
+{% endblock %}

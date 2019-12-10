@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-9">
+
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" style="height: 70vh" src="{{url_for('static', filename=post.uniquekey)}}" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title">{{post.title}}</h2>
+            <p class="card-text">{{post.content}}</p>
+          </div>
+          <div class="card-footer text-muted">
+            {{post.entrada}}
+            <!--<a href="#">Start Bootstrap</a>-->
+          </div>
+        </div>
+        {% if current_user.admin == True %}
+			<a href="{{url_for('edit', slug = post.slug)}}">Edit</a>	
+			<form method="GET" action="{{url_for('d', id=post.id)}}">
+				<button type="submit">del</button>
+			</form>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

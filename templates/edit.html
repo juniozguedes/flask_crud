@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+	<form action="{{url_for('show', slug=post.slug)}}" method="POST">
+		<div class="col-12 form_padding">
+			<input type="text" name="title" value="{{post.title}}">
+			<input type="text" name="content" value="{{post.content}}">
+		</div>
+		<div class="col-12 form_padding">
+			<input type="submit" value="Editar Postagem">
+		</div>
+	</form>
+</div>
+{% endblock %}

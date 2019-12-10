@@ -1,0 +1,89 @@
+<!-- Top Bar -->
+		<div id="top-bar" >
+			<div class="container-fullwidth clearfix">
+				<div class="col_half fright col_last nobottommargin">
+					<!-- Top Links -->
+					<div class="top-links">
+						<ul>
+							<li><a href='#' data-select='lang-menu'>Selecione o idioma</a>
+								<ul id="langMenu">
+									<li><a href="index.html">Portugu&ecirc;s</a></li>
+									<li><a href="en/home.html">Ingl&ecirc;s</a></li>
+									<li><a href="es/pagina-de-inicio.html">Espanhol</a></li>
+								</ul>
+							</li>
+							<li><a href="{{url_for('faq')}}">FAQ</a></li>
+							<li><a href="{{url_for('contato')}}">Contato</a></li>
+							<li>
+								<a href="#" id="top-cart-trigger">Entrar</a>
+								<div id="top-cart">
+                                    <div class="top-cart-content">
+                                        <form method="post" action="https://v2.afilio.com.br/index.php" id="login-form" name="loginForm">
+                                            <input type="text" name="auth_login" placeholder="Usu&aacute;rio" required>
+                                            <input type="password" id="auth_pass" name="auth_pass" placeholder="Senha" required>
+                                            <select name="auth_type" required>
+                                                <option value='' disabled selected>Tipo</option>
+                                                <option value="aff">Afiliado</option>
+                                                <option value="mer">Anunciante</option>
+                                            </select>
+                                            <input name='rememberme' type="checkbox" id="remember-me" checked><label for='remember-me'>Lembrar senha</label>
+                                            <div>
+                                                <input type="submit" value="Enviar" class="btn btn-danger btn-block">
+                                                <input type="hidden" value="ok" name="Ok">
+                                                <input type="hidden" value="afilio" name="from">
+                                                <input type="hidden" value="https://www.afilio.com.br/login-incorreto/index.html" name="url_error">
+                                                <input type="hidden" value="3" name="id_regie">
+                                            </div>
+                                        </form>
+                                        <a href="https://v2.afilio.com.br/password.php" target='_blank'>Esqueceu a senha&#63;</a>
+                                        <a href="cadastro-afiliado.html">Novo cadastro</a>
+                                    </div>
+								</div>
+								<!-- top-cart end -->
+							</li>
+						</ul>
+					</div>
+					<!-- top-links end -->
+				</div>
+			</div>
+		</div>
+		<!-- top-bar end -->
+		
+<!-- Header -->
+		<header id="header" class="header transparent-header page-section dark">
+			<div id="header-wrap">
+				<div class="container-fullwidth clearfix">
+					<div id="primary-menu-trigger"><i class="fa fas fa-bars"></i></div>
+					<!-- Logo -->
+					<div id="logo">
+						<a href="{{url_for('index')}}" class="standard-logo" data-dark-logo="{{url_for('static',filename='images/logo-afilio.png')}}"><img src="{{url_for('static',filename='images/logo-afilio.png')}}" alt="Logo Afilio"></a>
+						<a href="{{url_for('index')}}" class="retina-logo" data-dark-logo="{{url_for('static',filename='images/logo-afilio.png')}}"><img src="{{url_for('static',filename='images/logo-afilio.png')}}" alt="Logo Afilio"></a>
+					</div>
+					<!-- logo end -->
+
+					<!-- Primary Navigation class='marcador' = active itens-->
+					<nav id="primary-menu">
+						<ul>
+							<li><a href="{{url_for('index')}}" {% if inicio %} class="marcador" {%endif%}>In&iacute;cio</a></li>
+							<li><a href="{{url_for('afiliados')}}" {% if afiliados %} class="marcador" {%endif%}>Afiliados</a></li>
+							<li><a href="{{url_for('anunciantes_agencias')}}" {% if anunciantes_agencias %} class="marcador" {%endif%} id="h_anunciantes_agencias">Anunciantes e Ag&ecirc;ncias</a></li>
+							<li><a href="{{url_for('poder_afiliacao')}}" {% if poder_afiliacao %} class="marcador" {%endif%} id="h_poder_afiliacao">O poder da afilia&ccedil;&atilde;o</a></li>
+							<li>
+								<a href='#' {% if sobre %} class="marcador" {%endif%} data-select='about-menu'>Sobre Afilio</a>
+								<ul>
+									<li><a href="{{url_for('sobre_afilio_nossa_historia')}}">Nossa hist&oacute;ria</a></li>
+									<li><a href="sobre-afilio.html#lideres">Nossos l&iacute;deres</a></li>
+									<li><a href="sobre-afilio.html#cj">CJ | Commission Junction</a></li>
+									<li><a href="sobre-afilio.html#instituto">Instituto Afilio</a></li>
+									<li><a href="carreiras.html">Carreiras</a></li>
+									<li><a href="cases.html">Cases</a></li>
+								</ul>
+							</li>
+							<li><a href="{{url_for('blog')}}" {% if noticias %} class="marcador" {%endif%} id="h_noticias">Not&iacute;cias</a></li>
+						</ul>
+					</nav>
+					<!-- primary-menu end -->
+				</div>
+			</div>
+		</header>
+		<!-- header end -->

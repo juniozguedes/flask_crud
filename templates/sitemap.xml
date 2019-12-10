@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-06-07T10:42:31-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2019-06-07T10:42:31-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/system-of-a-down/</loc>
+    <lastmod>2019-06-07T10:42:31-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/decimo-quinto/</loc>
+    <lastmod>2019-05-15T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/decimo-quarto/</loc>
+    <lastmod>2019-05-14T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/decimo-terceiro/</loc>
+    <lastmod>2019-05-13T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/decimo-segundo/</loc>
+    <lastmod>2019-05-12T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/decimo-primeiro/</loc>
+    <lastmod>2019-05-11T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/decimo/</loc>
+    <lastmod>2019-05-10T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/nono/</loc>
+    <lastmod>2019-05-09T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/oitavo/</loc>
+    <lastmod>2019-05-08T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/setimo/</loc>
+    <lastmod>2019-05-07T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/sexto/</loc>
+    <lastmod>2019-05-06T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/quinto/</loc>
+    <lastmod>2019-05-05T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/quarto/</loc>
+    <lastmod>2019-05-04T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/terceiro/</loc>
+    <lastmod>2019-05-03T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/segundo/</loc>
+    <lastmod>2019-05-02T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/primeiro/</loc>
+    <lastmod>2019-05-01T12:00:00-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

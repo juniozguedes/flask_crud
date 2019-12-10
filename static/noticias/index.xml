@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Afilio</title>
+    <link>/</link>
+    <description>Recent content on Afilio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 07 Jun 2019 10:42:31 -0300</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>System of a down</title>
+      <link>/posts/system-of-a-down/</link>
+      <pubDate>Fri, 07 Jun 2019 10:42:31 -0300</pubDate>
+      
+      <guid>/posts/system-of-a-down/</guid>
+      <description>Breaking into Fort Knox, stealling our intentions.</description>
+    </item>
+    
+    <item>
+      <title>Decimo Quinto</title>
+      <link>/posts/decimo-quinto/</link>
+      <pubDate>Wed, 15 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/decimo-quinto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo Quarto</title>
+      <link>/posts/decimo-quarto/</link>
+      <pubDate>Tue, 14 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/decimo-quarto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo Terceiro</title>
+      <link>/posts/decimo-terceiro/</link>
+      <pubDate>Mon, 13 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/decimo-terceiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo Segundo</title>
+      <link>/posts/decimo-segundo/</link>
+      <pubDate>Sun, 12 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/decimo-segundo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo primeiro</title>
+      <link>/posts/decimo-primeiro/</link>
+      <pubDate>Sat, 11 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/decimo-primeiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo</title>
+      <link>/posts/decimo/</link>
+      <pubDate>Fri, 10 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/decimo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Nono</title>
+      <link>/posts/nono/</link>
+      <pubDate>Thu, 09 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/nono/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Oitavo</title>
+      <link>/posts/oitavo/</link>
+      <pubDate>Wed, 08 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/oitavo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Setimo</title>
+      <link>/posts/setimo/</link>
+      <pubDate>Tue, 07 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/setimo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Sexto</title>
+      <link>/posts/sexto/</link>
+      <pubDate>Mon, 06 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/sexto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Quinto</title>
+      <link>/posts/quinto/</link>
+      <pubDate>Sun, 05 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/quinto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Quarto</title>
+      <link>/posts/quarto/</link>
+      <pubDate>Sat, 04 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/quarto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Terceiro</title>
+      <link>/posts/terceiro/</link>
+      <pubDate>Fri, 03 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/terceiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Segundo</title>
+      <link>/posts/segundo/</link>
+      <pubDate>Thu, 02 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/segundo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Primeiro</title>
+      <link>/posts/primeiro/</link>
+      <pubDate>Wed, 01 May 2019 12:00:00 -0300</pubDate>
+      
+      <guid>/posts/primeiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+  </channel>
+</rss>

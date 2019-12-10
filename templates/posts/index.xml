@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>http://teste.tag.vc/posts/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 28 Jun 2019 00:00:00 -0300</lastBuildDate>
+    
+	<atom:link href="http://teste.tag.vc/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ajuste de URL</title>
+      <link>http://teste.tag.vc/posts/ajuste-de-url/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 -0300</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/ajuste-de-url/</guid>
+      <description>Colocando as URL&#39;s do site de forma absoluta para funcionar para todas as páginas</description>
+    </item>
+    
+    <item>
+      <title>Diretório de publicação</title>
+      <link>http://teste.tag.vc/posts/diret%C3%B3rio-de-publica%C3%A7%C3%A3o/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 -0300</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/diret%C3%B3rio-de-publica%C3%A7%C3%A3o/</guid>
+      <description>Configurando diretório de publicação para ajustar a url dos posts.</description>
+    </item>
+    
+    <item>
+      <title>Permalink</title>
+      <link>http://teste.tag.vc/posts/permalink/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 -0300</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/permalink/</guid>
+      <description>Configurando o permalink dos posts no arquivo de configuração.</description>
+    </item>
+    
+    <item>
+      <title>retirei o https</title>
+      <link>http://teste.tag.vc/posts/retirei-o-https/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 -0300</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/retirei-o-https/</guid>
+      <description>Precisei retirar o https e o www da url base porque a url de teste nao tem ssl e nao redireciona com www.</description>
+    </item>
+    
+    <item>
+      <title>Post no bucket</title>
+      <link>http://teste.tag.vc/posts/post-no-bucket/</link>
+      <pubDate>Thu, 27 Jun 2019 00:00:00 -0300</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/post-no-bucket/</guid>
+      <description>post direto no bucket da amazon!</description>
+    </item>
+    
+    <item>
+      <title>Decimo Quinto</title>
+      <link>http://teste.tag.vc/posts/decimo-quinto/</link>
+      <pubDate>Wed, 15 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/decimo-quinto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo Quarto</title>
+      <link>http://teste.tag.vc/posts/decimo-quarto/</link>
+      <pubDate>Tue, 14 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/decimo-quarto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo Terceiro</title>
+      <link>http://teste.tag.vc/posts/decimo-terceiro/</link>
+      <pubDate>Mon, 13 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/decimo-terceiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo Segundo</title>
+      <link>http://teste.tag.vc/posts/decimo-segundo/</link>
+      <pubDate>Sun, 12 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/decimo-segundo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo primeiro</title>
+      <link>http://teste.tag.vc/posts/decimo-primeiro/</link>
+      <pubDate>Sat, 11 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/decimo-primeiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Decimo</title>
+      <link>http://teste.tag.vc/posts/decimo/</link>
+      <pubDate>Fri, 10 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/decimo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Nono</title>
+      <link>http://teste.tag.vc/posts/nono/</link>
+      <pubDate>Thu, 09 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/nono/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Oitavo</title>
+      <link>http://teste.tag.vc/posts/oitavo/</link>
+      <pubDate>Wed, 08 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/oitavo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Setimo</title>
+      <link>http://teste.tag.vc/posts/setimo/</link>
+      <pubDate>Tue, 07 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/setimo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Sexto</title>
+      <link>http://teste.tag.vc/posts/sexto/</link>
+      <pubDate>Mon, 06 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/sexto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Quinto</title>
+      <link>http://teste.tag.vc/posts/quinto/</link>
+      <pubDate>Sun, 05 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/quinto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Quarto</title>
+      <link>http://teste.tag.vc/posts/quarto/</link>
+      <pubDate>Sat, 04 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/quarto/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Terceiro</title>
+      <link>http://teste.tag.vc/posts/terceiro/</link>
+      <pubDate>Fri, 03 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/terceiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Segundo</title>
+      <link>http://teste.tag.vc/posts/segundo/</link>
+      <pubDate>Thu, 02 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/segundo/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Primeiro</title>
+      <link>http://teste.tag.vc/posts/primeiro/</link>
+      <pubDate>Wed, 01 May 2019 15:00:00 +0000</pubDate>
+      
+      <guid>http://teste.tag.vc/posts/primeiro/</guid>
+      <description>This is a Standard post with a Preview ImageLorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+ 
+<div class="container-fluid">
+		<form  enctype="multipart/form-data" action="{{url_for('blog')}}" method="POST">
+			<p><input placeholder="Titulo" type="text" name="title"></p>
+			<p><input placeholder="Descricao" type="text" name="content"></p>
+			<input type="file" name="file"> 
+			<input class="container" type="submit" value="upload">
+		</form>
+		{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		<ul class="flashes">
+			{% for message in messages %}
+			<li style="color:white; font-weight:bold;">{{message}}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		{% endwith %}
+	</div>
+</div>
+<footer class="footer">
+      <div class="container">
+<!--        <span class="text-muted">Desenv. <span style="font-style: italic;">Wellington Guedes</span>2018.</span>-->
+      </div>
+</footer>
+
+{% endblock %}
